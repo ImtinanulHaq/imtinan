@@ -1,0 +1,245 @@
+/* Global Reset and Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+/* Side Navigation */
+.side-nav {
+    width: 80px;
+    background-color: #1f2937;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    right: 0;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    display: flex;
+    margin-right: 80px;
+}
+
+.left-section {
+    width: 50%;
+    background-color: #0047AB;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello {
+    color: #4895EF;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+
+  }
+
+  @property --k {
+    syntax: '<number>';
+    initial-value: 0;
+    inherits: false;
+}
+
+html, body { 
+    display: grid;
+    height: 80%;
+    margin: 0;
+    background: #000;
+    place-items: center;
+}
+
+svg[height='0'] { 
+    position: absolute; 
+}
+
+h1 {
+    --k: 0;
+    background: linear-gradient(90deg, 
+        hsl(calc(var(--k)*1turn), 95%, 65%), 
+        hsl(calc(var(--k)*1turn + 90deg), 95%, 65%)) text;
+    color: transparent;
+    font: 900 clamp(0.5em, 5vw, 3em) sans-serif;
+    filter: url(#f);
+    text-align: center;
+    text-transform: uppercase;
+    animation: k 4s linear infinite;
+}
+
+@keyframes k { 
+    to { --k: 1; } 
+}
+
+
+.title {
+    color: #ffffff;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.hire-button {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: fit-content;
+    margin-bottom: 3rem;
+    transition: all 0.3s ease;
+}
+/* ... other styles ... */
+
+.social-icon img {
+    /* Set a maximum width for responsiveness */
+    max-width: 100%; 
+    /* Maintain aspect ratio */
+    height: auto;
+}
+
+/* ... other styles ... */
+
+.hire-button:hover {
+    background-color: #ffffff;
+    color: #0047AB;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #ffffff;
+}
+
+/* Right Section */
+.right-section {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.profile-section {
+    width: 100%;
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.bio {
+    color: #4B5563;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+}
+
+.resume-button {
+    background-color: #1f2937;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #0047AB;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .content {
+        flex-direction: column;
+    }
+    
+    .left-section,
+    .right-section {
+        width: 100%;
+    }
+    
+    .left-section {
+        padding: 3rem 2rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-nav {
+        width: 60px;
+    }
+    
+    .content {
+        margin-right: 60px;
+    }
+    
+    .nav-links {
+        gap: 1.5rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.75rem;
+    }
+}
