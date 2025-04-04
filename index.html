@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+   
+   
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            line-height: 1.6; 
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: relative; 
+            overflow: hidden; 
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5em; 
+            position: relative; 
+            z-index: 2; 
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%; 
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(255,0,0,0.8), rgba(0,255,0,0.8), rgba(0,0,255,0.8));
+            animation: gradientSlide 5s linear infinite; 
+            z-index: 1; 
+        }
+
+        @keyframes gradientSlide {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        
+        main {
+            padding: 2rem; 
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem; 
+        }
+        
+        .image-container {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+            background-color: #fff;
+            padding: 1rem;
+            transition: transform 0.3s ease; 
+            overflow: hidden;
+        }
+
+        .image-container:hover {
+            transform: scale(1.05); 
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px; 
+            justify-content: center;
+            margin-bottom: 30px;
+            margin-top: 50px; /* Added distance from the header */
+        }
+        
+        .categories button {
+            padding: 12px 20px; 
+            border: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform for button animation */
+        }
+
+        .categories button:hover {
+            background-color: #555;
+            transform: translateY(-3px); /* Button moves up slightly on hover */
+        }
+        
+        .work-category {
+            margin-bottom: 30px; 
+        }
+        
+        .work-category h2 {
+            text-align: center;
+            background-color: #444;
+            color: white;
+            padding: 12px 20px; 
+            margin: 0 0 15px; 
+            text-transform: uppercase; 
+        }
+
+        @media (max-width: 600px) {
+            .image-container {
+                padding: 0.5rem;
+            }
+
+            header h1 {
+                font-size: 2em; 
+            }
+        }
+    </style>
+   
+
+   
+</head>
+<body>
+
+    <header>
+        <h1>My Work</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="categories">
+            <button>Logo Design</button>
+            <button>Poster Design</button>
+            <button>Banner Design</button>
+            <button>Card Design</button>
+            <button>Menu Design</button>
+            <button>Certificates</button>
+            <button>Scenery Designs</button>
+            <button>Others</button>
+        </div>
+
+        <div class="work-category" id="logo-design">
+            <h2>Logo Design</h2>
+            <section class="gallery">
+                <div class="image-container"><img src="logo1.jpg" alt="Logo 1"></div>
+                <div class="image-container"><img src="logo2.jpg" alt="Logo 2"></div>
+                <div class="image-container"><img src="logo3.jpg" alt="Logo 3"></div>
+                <div class="image-container"><img src="logo4.jpg" alt="Logo 4"></div>
+                <div class="image-container"><img src="logo5.jpg" alt="Logo 5"></div>
+                <div class="image-container"><img src="logo6.jpg" alt="Logo 6"></div>
+                <div class="image-container"><img src="logo7.jpg" alt="Logo 7"></div>
+                <div class="image-container"><img src="logo8.jpg" alt="Logo 8"></div>
+                <div class="image-container"><img src="logo9.jpg" alt="Logo 9"></div>
+                <div class="image-container"><img src="logo10.jpg" alt="Logo 10"></div>
+                <div class="image-container"><img src="logo11.jpg" alt="Logo 11"></div>
+                <div class="image-container"><img src="logo12.jpg" alt="Logo 12"></div>
+                <div class="image-container"><img src="logo13.jpg" alt="Logo 13"></div>
+                <div class="image-container"><img src="logo14.jpg" alt="Logo 14"></div>
+                <div class="image-container"><img src="logo15.jpg" alt="Logo 15"></div>
+                <div class="image-container"><img src="logo16.jpg" alt="Logo 16"></div>
+                <div class="image-container"><img src="logo17.jpg" alt="Logo 17"></div>
+                <div class="image-container"><img src="logo18.jpg" alt="Logo 18"></div>
+                <div class="image-container"><img src="logo19.jpg" alt="Logo 19"></div>
+                <div class="image-container"><img src="logo20.jpg" alt="Logo 20"></div>
+                <div class="image-container"><img src="logo21.jpg" alt="Logo 21"></div>
+                <div class="image-container"><img src="logo22.jpg" alt="Logo 22"></div>
+                <div class="image-container"><img src="logo23.png" alt="Logo 23"></div>
+                <div class="image-container"><img src="logo24.png" alt="Logo 24"></div>
+                <div class="image-container"><img src="logo25.png" alt="Logo 25"></div>
+                <div class="image-container"><img src="logo27.jpg" alt="Logo 27"></div>
+                <div class="image-container"><img src="logo28.png" alt="Logo 28"></div>
+                <div class="image-container"><img src="logo29.jpg" alt="Logo 29"></div>
+                <div class="image-container"><img src="logo30.jpg" alt="Logo 30"></div>
+                <div class="image-container"><img src="logo31.jpg" alt="Logo 31"></div>
+                <div class="image-container"><img src="logo32.jpg" alt="Logo 32"></div>
+                <div class="image-container"><img src="logo33.jpg" alt="Logo 33"></div>
+                <div class="image-container"><img src="logo34.jpg" alt="Logo 34"></div>
+                <div class="image-container"><img src="logo35.jpg" alt="Logo 35"></div>
+                <div class="image-container"><img src="logo36.jpg" alt="Logo 36"></div>
+                <div class="image-container"><img src="logo37.jpg" alt="Logo 37"></div>
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="work-category" id="logo-design">
+        <h2>Poster Design</h2>
+        <section class="gallery">
+            <div class="image-container"><img src="poster1.jpg" alt="Poster 1"></div>
+            <div class="image-container"><img src="poster2.jpg" alt="Poster 2"></div>
+            <div class="image-container"><img src="poster3.jpg" alt="Poster 3"></div>
+            <div class="image-container"><img src="poster4.jpg" alt="Poster 4"></div>
+            <div class="image-container"><img src="poster5.jpg" alt="Poster 5"></div>
+            <div class="image-container"><img src="poster6.jpg" alt="Poster 6"></div>
+            <div class="image-container"><img src="poster7.jpg" alt="Poster 7"></div>
+            <div class="image-container"><img src="poster8.jpg" alt="Poster 8"></div>
+            <div class="image-container"><img src="poster9.jpg" alt="Poster 9"></div>
+            <div class="image-container"><img src="poster10.jpg" alt="Poster 10"></div>
+            <div class="image-container"><img src="poster11.png" alt="Poster 11"></div>
+            <div class="image-container"><img src="poster12.jpg" alt="Poster 12"></div>
+            <div class="image-container"><img src="poster13.jpg" alt="Poster 13"></div>
+            <div class="image-container"><img src="poster14.jpg" alt="Poster 14"></div>
+            <div class="image-container"><img src="poster15.jpg" alt="Poster 15"></div>
+            <div class="image-container"><img src="poster16.jpg" alt="Poster 16"></div>
+            <div class="image-container"><img src="poster17.jpg" alt="Poster 17"></div>
+            <div class="image-container"><img src="poster18.jpg" alt="Poster 18"></div>
+            <div class="image-container"><img src="poster19.jpg" alt="Poster 19"></div>
+         
+        </section>
+    </div>
+  <div>
+
+
+
+
+    
+    <div class="work-category" id="logo-design">
+        <h2>Banner Design</h2>
+        <section class="gallery">
+         
+            <div class="image-container"><img src="banner1.jpg" alt="Banner 1"></div>
+            <div class="image-container"><img src="banner2.jpg" alt="Banner 2"></div>
+            <div class="image-container"><img src="banner3.jpg" alt="Banner 3"></div>
+            <div class="image-container"><img src="banner4.jpg" alt="Banner 4"></div>
+            <div class="image-container"><img src="banner5.jpg" alt="Banner 5"></div>
+            <div class="image-container"><img src="banner6.jpg" alt="Banner 6"></div> 
+            <div class="image-container"><img src="banner8.jpg" alt="Banner 8"></div>
+            <div class="image-container"><img src="banner9.jpg" alt="Banner 9"></div>
+            <div class="image-container"><img src="banner10.jpg" alt="Banner 10"></div>
+            <div class="image-container"><img src="banner11.jpg" alt="Banner 11"></div>
+            <div class="image-container"><img src="banner12.webp" alt="Banner 12"></div>
+            <div class="image-container"><img src="banner13.jpg" alt="Banner 13"></div>
+            <div class="image-container"><img src="banner14.webp" alt="Banner 14"></div>
+            <div class="image-container"><img src="banner15.jpg" alt="Banner 15"></div>         
+            <div class="image-container"><img src="banner16.jpg" alt="Banner 16"></div>
+            <div class="image-container"><img src="banner17.jpg" alt="Banner 17"></div>
+            <div class="image-container"><img src="banner18.jpg" alt="Banner 18"></div>
+            <div class="image-container"><img src="banner19.jpg" alt="Banner 19"></div>
+            <div class="image-container"><img src="banner20.jpg" alt="Banner 20"></div>
+            <div class="image-container"><img src="banner21.jpg" alt="Banner 21"></div> 
+            <div class="image-container"><img src="banner22.jpg" alt="Banner 22"></div>
+            <div class="image-container"><img src="banner23.jpg" alt="Banner 23"></div>
+            <div class="image-container"><img src="banner24.jpg" alt="Banner 24"></div>                                                        
+            <div class="image-container"><img src="banner25.jpg" alt="Banner 25"></div>    
+            <div class="image-container"><img src="banner7.jpg" alt="Banner 7"></div>  
+            <div class="image-container"><img src="banner26.jpg" alt="Banner 26"></div>    
+
+        </section>
+    </div>
+  <div>
+
+
+
+        
+<div class="work-category" id="logo-design">
+    <h2>Card Designs</h2>
+    <section class="gallery">
+     
+        <div class="image-container"><img src="card1.jpg" alt="card 1"></div>                                                               
+   
+    </section>
+</div>
+</div>
+
+<div class="work-category" id="logo-design">
+    <h2>Menu Card Designs</h2>
+    <section class="gallery">
+     
+        <div class="image-container"><img src="menu1.jpg" alt="menu 1"></div>          
+        <div class="image-container"><img src="menu2.jpg" alt="menu 2"></div>        
+    </section>
+</div>
+</div>
+
+
+
+<div class="work-category" id="logo-design">
+    <h2>Certificates</h2>
+    <section class="gallery">
+     
+        <div class="image-container"><img src="certificate1.jpg" alt="certificate1"></div>    
+        <div class="image-container"><img src="certificate2.jpg" alt="certificate2"></div>
+        <div class="image-container"><img src="certificate3.jpg" alt="certificate3"></div>       
+    </section>
+</div>
+</div>
+
+
+<div class="work-category" id="logo-design">
+    <h2>scenery Design</h2>
+    <section class="gallery">
+     
+        <div class="image-container"><img src="scene1.jpg" alt="1"></div>    
+        <div class="image-container"><img src="scene2.jpg" alt="2"></div>
+        <div class="image-container"><img src="scene3.jpg" alt="3"></div>    
+        <div class="image-container"><img src="scene4.jpg" alt="4"></div> 
+        <div class="image-container"><img src="scene5.jpg" alt="5"></div>
+        <div class="image-container"><img src="scene6.jpg" alt="6"></div> 
+        
+
+    </section>
+</div>
+</div>
+
+
+<div class="work-category" id="logo-design">
+    <h2>Others</h2>
+    <section class="gallery">
+        <div class="image-container"><img src="any editing in photoshop/13.jpg" alt="13"></div> 
+        <div class="image-container"><img src="any editing in photoshop/2.jpg" alt="2"></div>
+        <div class="image-container"><img src="any editing in photoshop/1.jpg" alt="1"></div>    
+        <div class="image-container"><img src="any editing in photoshop/3.jpg" alt="3"></div>     
+        <div class="image-container"><img src="any editing in photoshop/4.jpg" alt="4"></div>   
+        <div class="image-container"><img src="any editing in photoshop/5.jpg" alt="5"></div>
+        <div class="image-container"><img src="any editing in photoshop/6.jpg" alt="6"></div>
+        <div class="image-container"><img src="any editing in photoshop/7.jpg" alt="7"></div>    
+        <div class="image-container"><img src="any editing in photoshop/8.jpg" alt="8"></div>
+        <div class="image-container"><img src="any editing in photoshop/9.jpg" alt="9"></div>     
+        <div class="image-container"><img src="any editing in photoshop/10.jpg" alt="10"></div>   
+        <div class="image-container"><img src="any editing in photoshop/11.jpg" alt="11"></div>
+        <div class="image-container"><img src="any editing in photoshop/12.jpg" alt="12"></div>    
+        <div class="image-container"><img src="any editing in photoshop/14.jpg" alt="14"></div>    
+        <div class="image-container"><img src="any editing in photoshop/15.jpg" alt="15"></div>   
+    </section>
+</div>
+</div>
+
+</body>
+</html>
